@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+
+:root {
+  /* Colores principales */
+  --primary: #2A5C8A;
+  --secondary: #A0AEC0;
+  --accent: #E67E22;
+  --background-light: #F7FAFC;
+  --background-dark: #1A202C;
+  --text-light: #2D3748;
+  --text-dark: #E2E8F0;
+  
+  /* Tipografías */
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-code: 'Fira Code', monospace;
+  
+  /* Bordes */
+  --border-radius: 0.5rem;
+  
+  /* Transiciones */
+  --transition: all 0.3s ease;
+}
+
+/* Reset y estilos base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+  transition: var(--transition);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 2rem;
+  }
+}
+
+/* Iconos */
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: 'liga';
+}
+
+/* Header */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+    padding: 5rem 0;
+  }
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .header-content {
+    margin-bottom: 0;
+  }
+}
+
+.logo {
+  width: 6rem;
+  height: 6rem;
+  margin-right: 1.5rem;
+  border-radius: 50%; 
+  object-fit: cover;
+  border: 3px solid var(--accent);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+.slogan {
+  font-size: 1.125rem;
+  color: var(--secondary);
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .slogan {
+    font-size: 1.25rem;
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  color: var(--secondary);
+  transition: var(--transition);
+}
+
+.social-link:hover {
+  color: var(--accent);
+}
+
+.social-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Contenido principal */
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .main-grid {
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+}
+
+.content-section {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Secciones */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-icon {
+  margin-right: 0.5rem;
+  color: var(--accent);
+}
+
+.section-text {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--secondary);
+}
+
+/* Barra lateral */
+.sidebar {
+  background-color: #1a202c;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.values-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.value-item {
+  display: flex;
+  align-items: flex-start;
+}
+
+.value-icon {
+  color: var(--accent);
+  margin-right: 0.75rem;
+  margin-top: 0.25rem;
+}
+
+.value-content h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-bottom: 0.25rem;
+}
+
+.value-content p {
+  color: var(--secondary);
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid #4a5568;
+  margin-top: 4rem;
+}
+
+.footer-text {
+  color: var(--secondary);
+}
+
+/* Utilidades */
+.text-accent {
+  color: var(--accent);
+}
+
+.text-secondary {
+  color: var(--secondary);
+}
+
+.bg-dark {
+  background-color: var(--background-dark);
+}
+
+.bg-gray-900 {
+  background-color: #1a202c;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-lg {
+  border-radius: var(--border-radius);
+}
+
+.transition-colors {
+  transition: var(--transition);
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.875rem;
+  }
+  
+  .slogan {
+    font-size: 1rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+  }
+}
