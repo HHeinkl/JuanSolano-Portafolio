@@ -4,20 +4,21 @@
     <meta charset="utf-8"/>
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Portafolio Juan Solano</title>
-    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Estilos.css">
 </head>
-<body class="bg-dark">
+<body>
     <div class="container">
         <header class="header">
             <div class="header-content">
-                <img alt="Logo personal de Juan Solano" class="logo" src="assets/images/logo-juan-solano.ico">
-                <div>
+                <div class="logo-container">
+                    <img alt="Logo de un control de videojuegos" class="logo" src="assets/images/Favicon.ico"/>
+                </div>
+                <div class="">
                     <h1 class="title">Juan Solano</h1>
                     <p class="slogan">"Donde la creatividad encuentra el código"</p>
                 </div>
             </div>
-            <div class="social-links">
+            <div class="social-container">
                 <a class="social-link" href="https://www.linkedin.com/in/juan-solano-7795b2340" rel="noopener noreferrer" target="_blank">
                     <svg aria-hidden="true" class="social-icon" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
@@ -33,16 +34,16 @@
 
         <main class="main-grid">
             <div class="content-section">
-                <section id="mision" class="section">
+                <section class="card" id="mision">
                     <h2 class="section-title">
                         <span class="material-icons section-icon">flag</span> Misión
                     </h2>
                     <p class="section-text">
-                        Brindar soluciones tecnológicas innovadoras y funcionales que impulsen la productividad y eficiencia de la organización, aplicando mis conocimientos en programación y desarrollo web, siempre con un enfoque en la mejora continua y la calidad del software.
+                        Brindar soluciones tecnológicas innovadoras y funcionales que impulsen la productividad y eficiencia de las organizaciones, aplicando mis conocimientos en programación y desarrollo web, siempre con un enfoque en la mejora continua y la calidad del software.
                     </p>
                 </section>
 
-                <section id="vision" class="section">
+                <section class="card" id="vision">
                     <h2 class="section-title">
                         <span class="material-icons section-icon">visibility</span> Visión
                     </h2>
@@ -52,49 +53,50 @@
                 </section>
             </div>
 
-            <aside class="sidebar">
+            <aside class="sidebar-card">
                 <h2 class="section-title">
                     <span class="material-icons section-icon">shield</span> Valores
                 </h2>
                 <ul class="values-list">
                     <li class="value-item">
                         <span class="material-icons value-icon">lightbulb</span>
-                        <div class="value-content">
-                            <h3>Innovación</h3>
-                            <p>Buscar constantemente nuevas formas de resolver problemas mediante la tecnología.</p>
+                        <div>
+                            <h3 class="value-title">Innovación</h3>
+                            <p class="value-description">Buscar constantemente nuevas formas de resolver problemas mediante la tecnología.</p>
                         </div>
                     </li>
                     <li class="value-item">
                         <span class="material-icons value-icon">assignment_turned_in</span>
-                        <div class="value-content">
-                            <h3>Responsabilidad</h3>
-                            <p>Cumplir con compromiso y ética en cada proyecto.</p>
+                        <div>
+                            <h3 class="value-title">Responsabilidad</h3>
+                            <p class="value-description">Cumplir con compromiso y ética en cada proyecto.</p>
                         </div>
                     </li>
                     <li class="value-item">
                         <span class="material-icons value-icon">groups</span>
-                        <div class="value-content">
-                            <h3>Trabajo en equipo</h3>
-                            <p>Colaborar para alcanzar metas comunes.</p>
+                        <div>
+                            <h3 class="value-title">Trabajo en equipo</h3>
+                            <p class="value-description">Colaborar para alcanzar metas comunes.</p>
                         </div>
                     </li>
                     <li class="value-item">
                         <span class="material-icons value-icon">school</span>
-                        <div class="value-content">
-                            <h3>Aprendizaje continuo</h3>
-                            <p>Mantenerme en constante actualización tecnológica.</p>
+                        <div>
+                            <h3 class="value-title">Aprendizaje continuo</h3>
+                            <p class="value-description">Mantenerme en constante actualización tecnológica.</p>
                         </div>
                     </li>
                     <li class="value-item">
                         <span class="material-icons value-icon">support_agent</span>
-                        <div class="value-content">
-                            <h3>Orientación al cliente</h3>
-                            <p>Desarrollar soluciones centradas en el usuario.</p>
+                        <div>
+                            <h3 class="value-title">Orientación al cliente</h3>
+                            <p class="value-description">Desarrollar soluciones centradas en el usuario.</p>
                         </div>
                     </li>
                 </ul>
             </aside>
         </main>
+
 
         <footer class="footer">
             <p class="footer-text">© 2024 Juan Solano. Todos los derechos reservados.</p>
