@@ -10,47 +10,68 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body class="gradient-bg">
-    <!-- Header/Navigation -->
+    
     <header class="header">
         <div class="container">
             <div class="nav-container">
-                <div class="logo-container">
+                
+                <a href="#" class="logo-container">
                     <div class="logo">
                         <img alt="Logo" src="assets/images/Favicon.ico"/>
                     </div>
                     <span class="logo-text">Juan Solano</span>
-                </div>
+                </a>
                 
                 <nav class="nav-menu">
-                    <a class="nav-link" href="#about">Sobre mí</a>
-                    <a class="nav-link" href="#skills">Habilidades</a>
-                    <a class="nav-link" href="#values">Valores</a>
-                    <a class="nav-link" href="#projects">Proyectos</a>
-                    <a class="nav-link" href="#contact">Contacto</a>
+                    <a class="nav-link" href="#about" data-i18n="nav_about">Sobre mí</a>
+                    <a class="nav-link" href="#skills" data-i18n="nav_skills">Habilidades</a>
+                    <a class="nav-link" href="#values" data-i18n="nav_values">Valores</a>
+                    <a class="nav-link" href="#projects" data-i18n="nav_projects">Proyectos</a>
+                    <a class="nav-link" href="#contact" data-i18n="nav_contact">Contacto</a>
                 </nav>
                 
-                <button class="mobile-menu-btn">
-                    <span class="material-icons">menu</span>
-                </button>
+                <div class="header-actions">
+                    
+                    <div class="nav-socials">
+                        <a href="https://www.linkedin.com/in/juan-solano-7795b2340" target="_blank" class="nav-social-link">
+                            <svg class="nav-social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/HHeinkl" target="_blank" class="nav-social-link">
+                            <svg class="nav-social-icon" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <button id="lang-toggle" class="lang-btn">
+                        <span class="lang-text">EN</span>
+                        <span class="material-icons">language</span>
+                    </button>
+
+                    <button class="mobile-menu-btn">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
             </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="container">
             <div class="hero-content">
                 <h1 class="hero-title fade-in">
                     Juan <span class="text-gradient">Solano</span>
                 </h1>
-                <p class="hero-subtitle fade-in" style="transition-delay: 0.2s;">
+                <p class="hero-subtitle fade-in" style="transition-delay: 0.2s;" data-i18n="hero_subtitle">
                     Donde la <span class="accent-text">creatividad</span> encuentra el <span class="accent-text">código</span>
                 </p>
                 <div class="hero-actions fade-in" style="transition-delay: 0.4s;">
-                    <a class="btn btn-primary" href="#projects">
+                    <a class="btn btn-primary" href="#projects" data-i18n="btn_projects">
                         Ver proyectos
                     </a>
-                    <a class="btn btn-secondary" href="#contact">
+                    <a class="btn btn-secondary" href="#contact" data-i18n="btn_contact">
                         Contactar
                     </a>
                 </div>
@@ -58,29 +79,47 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
             <div class="section-content">
-                <h2 class="section-title fade-in">Sobre mí</h2>
+                <h2 class="section-title fade-in" data-i18n="section_about">Sobre mí</h2>
                 
                 <div class="about-grid">
-                    <div class="card-module stagger-item">
+                    <div class="card-module stagger-item profile-card"> 
+                        <div class="card-header">
+                            <span class="material-icons text-accent" style="margin-right: 0.75rem;">person</span>
+                            <h3 class="card-title" data-i18n="profile_title">Perfil Profesional</h3>
+                        </div>
+                        <p class="card-text text-lg" data-i18n="profile_text">
+                            Ingeniero en Desarrollo de Software con experiencia en soporte técnico y en la
+                            creación de soluciones tecnológicas en backend utilizando .NET MVC, Spring Boot,
+                            Angular e implementación de APIs de Inteligencia Artificial.
+                        </p>
+                    </div>
+                    
+                    <div class="download-cv-container stagger-item" style="transition-delay: 0.3s;">
+                        <a href="assets/docs/Juan_Pablo_Solano_Esquivel_CV.pdf" download id="download-cv-btn" class="btn btn-primary btn-large">
+                            <span class="material-icons">download</span>
+                            Descargar Currículum
+                        </a>
+                    </div>
+                    
+                    <div class="card-module stagger-item" style="transition-delay: 0.4s;">
                         <div class="card-header">
                             <span class="material-icons text-accent">flag</span>
-                            <h3 class="card-title">Misión</h3>
+                            <h3 class="card-title" data-i18n="mission_title">Misión</h3>
                         </div>
-                        <p class="card-text">
+                        <p class="card-text" data-i18n="mission_text">
                             Brindar soluciones tecnológicas innovadoras y funcionales que impulsen la productividad y eficiencia de las organizaciones, aplicando mis conocimientos en programación y desarrollo web.
                         </p>
                     </div>
                     
-                    <div class="card-module stagger-item" style="transition-delay: 0.1s;">
+                    <div class="card-module stagger-item" style="transition-delay: 0.5s;">
                         <div class="card-header">
                             <span class="material-icons text-accent">visibility</span>
-                            <h3 class="card-title">Visión</h3>
+                            <h3 class="card-title" data-i18n="vision_title">Visión</h3>
                         </div>
-                        <p class="card-text">
+                        <p class="card-text" data-i18n="vision_text">
                             Convertirme en un profesional altamente especializado en desarrollo de software y arquitectura de soluciones tecnológicas, contribuyendo a proyectos con impacto positivo.
                         </p>
                     </div>
@@ -89,17 +128,16 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="section bg-light">
         <div class="container">
-            <h2 class="section-title fade-in">Habilidades Técnicas</h2>
+            <h2 class="section-title fade-in" data-i18n="section_skills">Habilidades Técnicas</h2>
             
             <div class="skills-grid">
                 <div class="skill-card stagger-item">
                     <div class="skill-icon">
                         <span class="material-icons">code</span>
                     </div>
-                    <h3 class="skill-title">Frontend</h3>
+                    <h3 class="skill-title" data-i18n="skill_fe">Frontend</h3>
                     <p class="skill-text">HTML, CSS, JavaScript, React</p>
                 </div>
                 
@@ -107,7 +145,7 @@
                     <div class="skill-icon">
                         <span class="material-icons">storage</span>
                     </div>
-                    <h3 class="skill-title">Backend</h3>
+                    <h3 class="skill-title" data-i18n="skill_be">Backend</h3>
                     <p class="skill-text">Node.js, Python, APIs, Bases de datos</p>
                 </div>
                 
@@ -115,7 +153,7 @@
                     <div class="skill-icon">
                         <span class="material-icons">devices</span>
                     </div>
-                    <h3 class="skill-title">Responsive</h3>
+                    <h3 class="skill-title" data-i18n="skill_resp">Responsive</h3>
                     <p class="skill-text">Diseño adaptable, UX/UI, Tailwind CSS</p>
                 </div>
                 
@@ -123,139 +161,132 @@
                     <div class="skill-icon">
                         <span class="material-icons">terminal</span>
                     </div>
-                    <h3 class="skill-title">DevOps</h3>
+                    <h3 class="skill-title" data-i18n="skill_devops">DevOps</h3>
                     <p class="skill-text">Git, CI/CD, Testing, Deployment</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Values Section -->
     <section id="values" class="section">
         <div class="container">
-            <h2 class="section-title fade-in">Valores</h2>
+            <h2 class="section-title fade-in" data-i18n="section_values">Valores</h2>
             
             <div class="values-grid">
                 <div class="card-module stagger-item">
                     <div class="card-header">
                         <span class="material-icons text-accent">lightbulb</span>
-                        <h3 class="card-title">Innovación</h3>
+                        <h3 class="card-title" data-i18n="val_innovation">Innovación</h3>
                     </div>
-                    <p class="card-text">Buscar constantemente nuevas formas de resolver problemas mediante la tecnología.</p>
+                    <p class="card-text" data-i18n="val_innovation_text">Buscar constantemente nuevas formas de resolver problemas mediante la tecnología.</p>
                 </div>
                 
                 <div class="card-module stagger-item" style="transition-delay: 0.1s;">
                     <div class="card-header">
                         <span class="material-icons text-accent">assignment_turned_in</span>
-                        <h3 class="card-title">Responsabilidad</h3>
+                        <h3 class="card-title" data-i18n="val_resp">Responsabilidad</h3>
                     </div>
-                    <p class="card-text">Cumplir con compromiso y ética en cada proyecto.</p>
+                    <p class="card-text" data-i18n="val_resp_text">Cumplir con compromiso y ética en cada proyecto.</p>
                 </div>
                 
                 <div class="card-module stagger-item" style="transition-delay: 0.2s;">
                     <div class="card-header">
                         <span class="material-icons text-accent">groups</span>
-                        <h3 class="card-title">Trabajo en equipo</h3>
+                        <h3 class="card-title" data-i18n="val_team">Trabajo en equipo</h3>
                     </div>
-                    <p class="card-text">Colaborar para alcanzar metas comunes.</p>
+                    <p class="card-text" data-i18n="val_team_text">Colaborar para alcanzar metas comunes.</p>
                 </div>
                 
                 <div class="card-module stagger-item" style="transition-delay: 0.3s;">
                     <div class="card-header">
                         <span class="material-icons text-accent">school</span>
-                        <h3 class="card-title">Aprendizaje continuo</h3>
+                        <h3 class="card-title" data-i18n="val_learn">Aprendizaje continuo</h3>
                     </div>
-                    <p class="card-text">Mantenerme en constante actualización tecnológica.</p>
+                    <p class="card-text" data-i18n="val_learn_text">Mantenerme en constante actualización tecnológica.</p>
                 </div>
                 
                 <div class="card-module stagger-item" style="transition-delay: 0.4s;">
                     <div class="card-header">
                         <span class="material-icons text-accent">support_agent</span>
-                        <h3 class="card-title">Orientación al cliente</h3>
+                        <h3 class="card-title" data-i18n="val_customer">Orientación al cliente</h3>
                     </div>
-                    <p class="card-text">Desarrollar soluciones centradas en el usuario.</p>
+                    <p class="card-text" data-i18n="val_customer_text">Desarrollar soluciones centradas en el usuario.</p>
                 </div>
                 
                 <div class="card-module stagger-item" style="transition-delay: 0.5s;">
                     <div class="card-header">
                         <span class="material-icons text-accent">auto_awesome</span>
-                        <h3 class="card-title">Calidad</h3>
+                        <h3 class="card-title" data-i18n="val_quality">Calidad</h3>
                     </div>
-                    <p class="card-text">Entregar productos de alta calidad y rendimiento.</p>
+                    <p class="card-text" data-i18n="val_quality_text">Entregar productos de alta calidad y rendimiento.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="section bg-light">
         <div class="container">
-            <h2 class="section-title fade-in">Proyectos Destacados</h2>
+            <h2 class="section-title fade-in" data-i18n="section_projects">Proyectos Destacados</h2>
             
             <div class="projects-grid">
                 <div class="project-card stagger-item">
                     <div class="project-image frontend">
                         <span class="material-icons">web</span>
                     </div>
-                    <h3 class="project-title">Sistema de Gestión</h3>
-                    <p class="project-text">Plataforma web para gestión empresarial con dashboard interactivo.</p>
+                    <h3 class="project-title" data-i18n="proj_system">Sitio web de Gimnasio</h3>
+                    <p class="project-text" data-i18n="proj_system_text">Plataforma web para registro y gestión de gimnasio</p>
                     <div class="project-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">MongoDB</span>
+                        <span class="tag">Springboot</span>
+                        <span class="tag">MVC</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">SQL</span>
                     </div>
                 </div>
                 
                 <div class="project-card stagger-item" style="transition-delay: 0.1s;">
                     <div class="project-image mobile">
-                        <span class="material-icons">phone_iphone</span>
+                        <span class="material-icons">auto_awesome</span>
                     </div>
-                    <h3 class="project-title">App Móvil</h3>
-                    <p class="project-text">Aplicación móvil para seguimiento de hábitos y productividad.</p>
+                    <h3 class="project-title" data-i18n="proj_summary">Pagina de Resumenes Automatizada</h3>
+                    <p class="project-text" data-i18n="proj_summary_text">Pagina para generacion de resumenes y presentaciones usando AI</p>
                     <div class="project-tags">
-                        <span class="tag">React Native</span>
-                        <span class="tag">Firebase</span>
-                        <span class="tag">Redux</span>
+                        <span class="tag">Angular</span>
+                        <span class="tag">React</span>
+                        <span class="tag">MariaDB</span>
                     </div>
                 </div>
+                
             </div>
         </div>
     </section>
-
-    <!-- Contact Section -->
+    
     <section id="contact" class="section">
         <div class="container">
             <div class="contact-content">
-                <h2 class="section-title fade-in">¿Tienes un proyecto en mente?</h2>
-                <p class="contact-subtitle fade-in" style="transition-delay: 0.2s;">
-                    Estoy abierto a nuevas oportunidades y colaboraciones. ¡No dudes en contactarme!
+                <h2 class="section-title fade-in" data-i18n="contact_title">Hablemos de tu proyecto</h2>
+                <p class="contact-subtitle fade-in" style="transition-delay: 0.2s;" data-i18n="contact_sub">
+                    Envíame un mensaje directo y te responderé lo antes posible.
                 </p>
                 
-                <div class="social-links fade-in" style="transition-delay: 0.4s;">
-                    <a class="social-link" href="https://www.linkedin.com/in/juan-solano-7795b2340" target="_blank">
-                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
-                        </svg>
-                    </a>
-                    <a class="social-link" href="https://github.com/HHeinkl" target="_blank">
-                        <svg class="social-icon" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-                        </svg>
-                    </a>
-                </div>
-                
-                <a class="btn btn-primary btn-large fade-in" style="transition-delay: 0.6s;" href="mailto:juan.solano@example.com">
-                    <span class="material-icons">email</span>
-                    Enviar mensaje
-                </a>
+                <form action="https://formspree.io/f/xbjnopaq" method="POST" class="contact-form fade-in" style="transition-delay: 0.4s;">
+                    <input type="text" name="name" placeholder="Tu Nombre" required data-i18n-placeholder="form_name_ph">
+                    <input type="email" name="_replyto" placeholder="Tu Correo Electrónico" required data-i18n-placeholder="form_email_ph">
+                    <input type="text" name="subject" placeholder="Asunto del Mensaje" required data-i18n-placeholder="form_subject_ph">
+                    <textarea name="message" rows="5" placeholder="Tu Mensaje..." required data-i18n-placeholder="form_message_ph"></textarea>
+                    
+                    <button type="submit" class="btn btn-primary btn-large" data-i18n="btn_send">
+                        <span class="material-icons">send</span>
+                        Enviar Mensaje
+                    </button>
+                </form>
+
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2024 Juan Solano. Todos los derechos reservados.</p>
+            <p class="footer-text">© 2025 Juan Solano. Todos los derechos reservados.</p>
         </div>
     </footer>
 
