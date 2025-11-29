@@ -90,8 +90,8 @@ body {
     display: flex;
     align-items: center; 
     gap: 0.75rem;
-    text-decoration: none; /* Importante para el logo que ahora es un <a> */
-    color: var(--text-primary); /* Para mantener el color del texto */
+    text-decoration: none; 
+    color: var(--text-primary); 
     transition: opacity 0.3s ease;
 }
 
@@ -166,6 +166,8 @@ body {
     display: flex;
     align-items: center;
     transition: color 0.3s ease;
+    line-height: 0; /* Asegura que el contenedor no tenga un espacio base extra */
+    padding: 0; /* Elimina padding que pueda causar recorte */
 }
 
 .nav-social-link:hover {
@@ -175,6 +177,16 @@ body {
 .nav-social-icon {
     width: 1.4rem;
     height: 1.4rem;
+    display: block;
+}
+
+/* Estilos Específicos de WhatsApp */
+.nav-social-link.whatsapp-nav-icon {
+    color: #25D366; /* Verde de WhatsApp */
+}
+
+.nav-social-link.whatsapp-nav-icon:hover {
+    color: #128C7E; /* Verde oscuro al pasar el ratón */
 }
 
 /* Botón de Idioma */
